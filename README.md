@@ -10,3 +10,9 @@ myproj<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ProductController.java <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;service <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ProductService.java <br>
+<br>
+<h4>Notes</h4>
+Should check the interceptors later <br>
+https://www.tutorialspoint.com/spring_boot/spring_boot_interceptor.htm <br><br>
+This could be interesting <br>
+https://www.tutorialspoint.com/spring_boot/spring_boot_rest_template.htm
