@@ -15,4 +15,8 @@ myproj<br>
 Should check the interceptors later <br>
 https://www.tutorialspoint.com/spring_boot/spring_boot_interceptor.htm <br><br>
 This could be interesting <br>
-https://www.tutorialspoint.com/spring_boot/spring_boot_rest_template.htm
+https://www.tutorialspoint.com/spring_boot/spring_boot_rest_template.htm <br><br>
+HTTPS example <br>
+https://www.tutorialspoint.com/spring_boot/spring_boot_enabling_https.htm <br><br>
+Actuator not working <br>
+https://www.tutorialspoint.com/spring_boot/spring_boot_actuator.htm <br><br>
