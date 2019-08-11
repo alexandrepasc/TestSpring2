@@ -1,6 +1,7 @@
 package com.TestSpring2.controller;
 
 import com.TestSpring2.dao.ProductDao;
+import com.TestSpring2.exception.ProductNotfoundException;
 import com.TestSpring2.model.Product;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -43,6 +44,8 @@ public class ProductController {
   
   @GetMapping("/product/{id}")
   public Optional<Product> getById(@PathVariable("id") UUID id) {
+    if (!repository.findById(id).isPresent()) throw new ProductNotfoundException();
+    
     Optional<Product> response = repository.findById(id);
     
     return response;
@@ -50,6 +53,8 @@ public class ProductController {
   
   @PutMapping("/product/{id}")
   public Product update(@PathVariable("id") UUID id, @RequestBody Product product) {
+    if (!repository.findById(id).isPresent()) throw new ProductNotfoundException();
+    
     Optional<Product> obj = repository.findById(id);
     Product prod = obj.get();
     
@@ -67,6 +72,7 @@ public class ProductController {
   
   @DeleteMapping("/product/{id}")
   public String delete(@PathVariable("id") UUID id) {
+    if (!repository.findById(id).isPresent()) throw new ProductNotfoundException();
     repository.deleteById(id);
     
     return id.toString();
