@@ -20,3 +20,5 @@ HTTPS example <br>
 https://www.tutorialspoint.com/spring_boot/spring_boot_enabling_https.htm <br><br>
 Actuator not working <br>
 https://www.tutorialspoint.com/spring_boot/spring_boot_actuator.htm <br><br>
+Authentication <br>
+https://www.tutorialspoint.com/spring_boot/spring_boot_oauth2_with_jwt.htm

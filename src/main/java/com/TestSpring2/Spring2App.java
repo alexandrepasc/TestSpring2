@@ -6,14 +6,16 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
+import org.springframework.security.oauth2.config.annotation.web.configuration.EnableAuthorizationServer;
+import org.springframework.security.oauth2.config.annotation.web.configuration.EnableResourceServer;
 
 import java.util.Arrays;
 
 @SpringBootApplication
+@EnableAuthorizationServer
+@EnableResourceServer
 public class Spring2App {
   
-  //  @Autowired
-  //  RestTemplate restTemplate;
   @Value("${spring.application.name:demoservice}")
   String name;
   
